@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trí tuệ Nhân tạo (AI) - STEM</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+
+    header p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1f2937;
+    }
+
+    /* Card chung */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    /* Chú thích khi hover */
+    .tooltip {
+      position: absolute;
+      bottom: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #111827;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      width: 220px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 6px;
+      border-style: solid;
+      border-color: #111827 transparent transparent transparent;
+    }
+
+    .card:hover .tooltip {
+      opacity: 1;
+      transform: translate(-50%, -5px);
+    }
+
+    /* Icon minh họa */
+    .icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* Infographic */
+    .infographic {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .step {
+      background: #e0f2fe;
+      padding: 20px;
+      border-radius: 50%;
+      width: 140px;
+      height: 140px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .step:hover {
+      background: #38bdf8;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f2937;
+      color: white;
+      font-size: 14px;
+    }
+    body{font-family:Arial;background:#f4f6f8;margin:0}
+header{background:#2563eb;color:#fff;padding:40px;text-align:center}
+.links{display:flex;justify-content:center;gap:20px;padding:40px}
+a{background:#fff;padding:20px 30px;border-radius:12px;text-decoration:none;color:#111;box-shadow:0 4px 10px rgba(0,0,0,.1);transition:.3s}
+a:hover{transform:scale(1.1);background:#dbeafe}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Trí tuệ Nhân tạo (AI)</h1>
+    <p>
+      Trí tuệ nhân tạo (Artificial Intelligence – AI) là lĩnh vực khoa học máy tính
+      nghiên cứu và phát triển các hệ thống có khả năng suy nghĩ, học tập và hỗ trợ
+      con người trong nhiều lĩnh vực của đời sống.
+    </p>
+  </header>
+
+  <!-- Vì sao AI quan trọng -->
+  <section>
+    <h2>Vì sao AI quan trọng?</h2>
+    <div class="card-container">
+
+      <div class="card">
+        <div class="tooltip">AI giúp máy móc học từ dữ liệu và tự cải thiện theo thời gian.</div>
+        <div class="icon">🤖</div>
+        <h3>Tự động hóa</h3>
+        <p>Giảm công việc thủ công, tăng hiệu suất lao động.</p>
+      </div>
+
+      <div class="card">
+        <div class="tooltip">AI phân tích lượng dữ liệu lớn nhanh và chính xác hơn con người.</div>
+        <div class="icon">📊</div>
+        <h3>Xử lý dữ liệu</h3>
+        <p>Hỗ trợ ra quyết định trong y tế, giáo dục, kinh tế.</p>
+      </div>
+
+      <div class="card">
+        <div class="tooltip">AI thúc đẩy đổi mới và tạo ra nhiều ngành nghề mới.</div>
+        <div class="icon">🚀</div>
+        <h3>Phát triển xã hội</h3>
+        <p>Đóng vai trò quan trọng trong cuộc cách mạng công nghiệp 4.0.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Minh họa AI -->
+  <section>
+    <h2>Ứng dụng của AI</h2>
+    <div class="card-container">
+
+      <div class="card">
+        <div class="tooltip">AI hỗ trợ chẩn đoán bệnh và phân tích hình ảnh y khoa.</div>
+        <div class="icon">🏥</div>
+        <h3>Y tế</h3>
+        <p>Phát hiện bệnh sớm và điều trị hiệu quả hơn.</p>
+      </div>
+
+      <div class="card">
+        <div class="tooltip">AI cá nhân hóa nội dung học tập cho từng học sinh.</div>
+        <div class="icon">🎓</div>
+        <h3>Giáo dục</h3>
+        <p>Học tập thông minh, linh hoạt và hiệu quả.</p>
+      </div>
+
+      <div class="card">
+        <div class="tooltip">Xe tự lái sử dụng AI để nhận diện và ra quyết định.</div>
+        <div class="icon">🚗</div>
+        <h3>Giao thông</h3>
+        <p>Nâng cao an toàn và giảm tai nạn.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Infographic -->
+<header>
+<h1>Cách AI hoạt động</h1>
+<p>Nhấn vào từng mục để hiểu rõ từng bước</p>
+</header>
+<div class="links">
+<a href="2.html">1. Dữ liệu</a>
+<a href="3.html">2. Học máy</a>
+<a href="4.html">3. Mô hình AI</a>
+<a href="5.html">4. Kết quả</a>
+</div>
+
+  <footer>
+    Website STEM – Chủ đề Trí tuệ Nhân tạo (AI)
+  </footer>
+
+</body>
+</html>
